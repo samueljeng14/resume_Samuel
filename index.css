@@ -492,22 +492,20 @@ section#experience{
 }
 
 .bar{
-	width:2000px;
-	height: 32px;
-	background-color: rgb(97, 206, 151);
-	border-radius: 32px;
-	margin-left: -1772px;
+	/*width:150px;*/
+	height: 28px;
+	border-left: 5px solid #61CE97;
 	margin-bottom: 60px;
-	text-align: right;
+	text-align: left;
 }
 
 .bar p{
 	margin: 0px;
-	padding: 0px 25px 0px 0px;
+	padding: 0px 0px 0px 25px;
 	font-family: PingFangTC;
 	font-size: 20px;
-	color: #FFFFFF;
-	letter-spacing: 2px;
+	color: #242424;
+	letter-spacing: 4px;
 	font-weight: 300;
 	top: 50%;
 	transform: translateY(-50%);
