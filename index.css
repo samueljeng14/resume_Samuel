@@ -834,3 +834,60 @@ section#bottom{
 	transform: rotate(180deg);
 	top: 0px;
 }
+
+.contact_info_container{
+	/*width: 600px;*/
+	top: 80px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+}
+
+.short_S_line{
+	height: 45px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 10.5px;
+	border-right: 5px solid white;
+	/*border-left: 5px solid white;*/
+	margin-right: 20px; 
+}
+
+.short_S_dots{
+	height: 45px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 20px; 
+}
+
+.dot{
+	width: 5px;
+	height: 5px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.dot1{
+	margin-bottom: 15px;
+}
+
+.contact_info{
+	display: inline-block;
+	color: white;
+	letter-spacing: 0.8px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+.contact_info_title{
+	margin-right: 10px;
+	text-align: left;
+}
+
+.contact_info_content{
+	text-align: right;
+}
