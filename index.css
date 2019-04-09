@@ -11,12 +11,46 @@ html, body{
 	background-color: #FDFDFD;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
+}
+
+audio{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
 }
 
 img{
 	display: block;
+}
+
+.mute{
+	position: fixed;
+	top: 30px;
+	right: 70px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.mute i{
+	font-size: 30px;
+	color: white;
+	position: absolute;
+}
+
+.fa-volume-up{
+	z-index: 5;
+	transition-duration: 0.3s;
+}
+
+.show{
+	opacity: 1;
+}
+
+.hide{
+	opacity: 0;
 }
 
 section#intro{
@@ -94,40 +128,40 @@ section#intro{
 @-webkit-keyframes sliceFromRight {
 	from {
 		transform: translateX(250px);
-		opacity: 0.5; 
+		opacity: 0.5;
 	}
-	to { 
-		transform: translateX(0px); 
+	to {
+		transform: translateX(0px);
 		opacity: 1;
 	}
 }
 @-o-keyframes sliceFromRight {
 	from {
 		transform: translateX(250px);
-		opacity: 0.5; 
+		opacity: 0.5;
 	}
-	to { 
-		transform: translateX(0px); 
+	to {
+		transform: translateX(0px);
 		opacity: 1;
 	}
 }
 @-moz-keyframes sliceFromRight {
 	from {
 		transform: translateX(250px);
-		opacity: 0.5; 
+		opacity: 0.5;
 	}
-	to { 
-		transform: translateX(0px); 
+	to {
+		transform: translateX(0px);
 		opacity: 1;
 	}
 }
 @keyframes sliceFromRight {
 	from {
 		transform: translateX(250px);
-		opacity: 0.5; 
+		opacity: 0.5;
 	}
-	to { 
-		transform: translateX(0px); 
+	to {
+		transform: translateX(0px);
 		opacity: 1;
 	}
 }
@@ -189,7 +223,7 @@ section#intro{
 }
 
 @-webkit-keyframes sliceFromLeft {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateX(-20px);
 	}
@@ -199,7 +233,7 @@ section#intro{
 	}
 }
 @-o-keyframes sliceFromLeft {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateX(-20px);
 	}
@@ -209,7 +243,7 @@ section#intro{
 	}
 }
 @-moz-keyframes sliceFromLeft {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateX(-20px);
 	}
@@ -219,7 +253,7 @@ section#intro{
 	}
 }
 @keyframes sliceFromLeft {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateX(-20px);
 	}
@@ -313,7 +347,7 @@ section#intro{
 }
 
 @-webkit-keyframes appearFromTop {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateY(-20px);
 	}
@@ -323,7 +357,7 @@ section#intro{
 	}
 }
 @-o-keyframes appearFromTop {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateY(-20px);
 	}
@@ -333,7 +367,7 @@ section#intro{
 	}
 }
 @-moz-keyframes appearFromTop {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateY(-20px);
 	}
@@ -343,7 +377,7 @@ section#intro{
 	}
 }
 @keyframes appearFromTop {
-	from { 
+	from {
 	opacity: 0;
 	transform: translateY(-20px);
 	}
@@ -377,7 +411,7 @@ section#intro{
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
-	transition-duration: 0.3s;	
+	transition-duration: 0.3s;
 }
 
 #hover{
@@ -479,7 +513,7 @@ section#intro{
 			opacity: 0;
 			transform: scale(8);
 		}
-	}	
+	}
 
 
 
@@ -488,7 +522,7 @@ section#experience{
 	opacity: 0;
 	margin-top: 50px;
 	overflow: hidden;
-	height: 600px;
+	height: 750px;
 }
 
 .bar{
@@ -554,7 +588,7 @@ section#experience{
 	font-size: 22px;
 	color: #61CE97;
 	letter-spacing: 1.35px;
-	margin-bottom: 18px;	
+	margin-bottom: 18px;
 }
 
 .job_sub{
@@ -617,7 +651,7 @@ section#about{
 }
 
 .box #second{
-	font-family: PingFangTC;	
+	font-family: PingFangTC;
 	font-weight: 400;
 	color: #2D2D2D;
 	margin-top: 10px;
@@ -714,7 +748,7 @@ section#pro{
 	font-family: PingFangTC-Medium;
 	font-size: 20px;
 	color: #61CE97;
-	letter-spacing: 3px;	
+	letter-spacing: 3px;
 	text-align: center;
 	margin-top: 42px;
 }
@@ -736,7 +770,7 @@ section#case{
 	display: none;
 	opacity: 0;
 	overflow: hidden;
-	height: 920px;
+	height: 1700px;
 }
 
 .H_2_box_container{
@@ -811,6 +845,28 @@ section#case{
 	text-align: justify;
 }
 
+.case_sub span{
+	text-align: right;
+	width: 100%;
+	display: block;
+}
+
+.case_sub span a{
+	font-size: 12px;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.50);
+	text-decoration: none;
+}
+
+.case_sub span i{
+	color: #61CE97;
+}
+
+.arrow{
+	color: white;
+}
+
 .H_2_box:hover .case_cover, .H_2_box:hover .case_title, .H_2_box:hover .case_sub{
 	opacity: 1;
 	transition-duration: 0.3s;
@@ -851,7 +907,7 @@ section#bottom{
 	width: 10.5px;
 	border-right: 5px solid white;
 	/*border-left: 5px solid white;*/
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 
 .short_S_dots{
@@ -861,7 +917,7 @@ section#bottom{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 
 .dot{

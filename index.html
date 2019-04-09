@@ -7,12 +7,26 @@
 	<link rel="icon" type="image/png" href="green2.png" />
 	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700i" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 	<script src="index.js"></script>
 </head>
-<body>
+<body class="first_click">
+	<audio controls class="bgm" id="bgm1">
+		<source src="bgm.mp3">
+	</audio>
+	<audio controls class="bgm" id="bgm2">
+		<source src="bgm 2.mp3">
+	</audio>
+	<audio src="bot.mp3" controls id="bot_audio"></audio>
 	<!-- 改動 -->
+	
+	<div class="mute">
+		<i class="fas fa-volume-off volume"></i>
+		<i class="fas fa-volume-up volume"></i>
+	</div>
+
 	<section id="intro">
 		<div class="bgc">
 			<img src="top.png" alt="">
@@ -63,16 +77,27 @@
 
 			<div class="H_All_BG">
 				<div class="year">
-					<p>2018<br> <i>-</i> <br>2016</p>
+					<p>2019<br> <i>-</i> <br>2016</p>
 				</div>
 				<div class="exp_text">
-					<div class="job_title">資管二年級</div>
+					<div class="job_title">資管三年級</div>
 					<div class="job_sub">國立政治大學</div>
 				</div>
 				<div class="grey_line"></div>
-				<div class="job_info">除修習商學院及資訊相關課程外，更至傳播學院大量選修行銷廣告、設計課程，企圖提升自身美感素養以及活動、專案企劃的能力。</div>
+				<div class="job_info">除修習商學院及資訊相關課程外，更至傳播學院大量選修行銷廣告、設計課程，提升自身美感素養以及活動、專案企劃的能力。</div>
 			</div>
 
+			<div class="H_All_BG">
+				<div class="year">
+					<p>2019<br> <i>-</i> <br>2014</p>
+				</div>
+				<div class="exp_text">
+					<div class="job_title">樂團鍵盤手</div>
+					<div class="job_sub">新店行道會</div>
+				</div>
+				<div class="grey_line"></div>
+				<div class="job_info">參與教會音樂製作並長期擔任現場音樂總監，每週固定為2000名會友現場彈奏，至今超過200場；也多次於和平籃球館舉辦之特會中，面對超過8000名與會者。</div>
+			</div>
 
 			<div class="H_All_BG">
 				<div class="year">
@@ -210,6 +235,50 @@
 					<div class="case_sub">代表公司出席Smart Trend 講座，介紹APP之功能和技術之突破。</div>
 				</div>
 			</div>
+			<div class="H_2_box_container">
+				<div class="H_2_box">
+					<img src="網頁重設計.png" alt="">
+					<div class="case_cover"></div>
+					<div class="case_title">網頁 Re-design</div>
+					<div class="case_sub">改造2erguy網頁之使用者體驗與UI設計，讓老舊且不易使用的網站重獲新生。
+					<br>
+					<span><a href="https://samueljeng14.github.io/2erguy-redesign/" target="_blank" >查看網頁 <i class="fas fa-arrow-circle-right arrow"></i></a></span>
+					</div>
+				</div>
+				<div class="H_2_box">
+					<img src="接案設計.png" alt="">
+					<div class="case_cover"></div>
+					<div class="case_title">網頁設計接案</div>
+					<div class="case_sub">
+					接案設計並製作雙語旅遊導覽網站，幫助台灣導遊在義大利拓展客群。
+					<br>
+					<span><a href="https://samueljeng14.github.io/case-itinerary/" target="_blank" >查看網頁 <i class="fas fa-arrow-circle-right arrow"></i></a></span>
+					</div>
+				</div>
+			</div>
+			<div class="H_2_box_container">
+				<div class="H_2_box">
+					<img src="泳池電影院.png" alt="">
+					<div class="case_cover"></div>
+					<div class="case_title">泳池電影院</div>
+					<div class="case_sub">於母校師大附中舉辦泳池電影院，邀請桂綸鎂、陳柏霖等演員蒞臨現場，並獲大量媒體報導曝光。
+					<br>
+					<span><a href="https://news.ltn.com.tw/news/life/breakingnews/2594150" target="_blank" >查看報導 <i class="fas fa-arrow-circle-right arrow"></i></a></span>
+					</div>
+
+
+				</div>
+				<div class="H_2_box">
+					<img src="烈火特會.png" alt="">
+					<div class="case_cover"></div>
+					<div class="case_title">烈火特會</div>
+					<div class="case_sub">
+					以鍵盤手兼樂團音樂總監身分，於和平籃球館舉辦超過8000人的大型特會，5天時間內全程於台上現場彈奏。	
+					<br>
+					<span><a href="https://www.youtube.com/watch?v=nk5ZwHDFmC0" target="_blank" >查看回顧 <i class="fas fa-arrow-circle-right arrow"></i></a></span>
+					</div>
+				</div>
+			</div>						
 		</div>
 	</section>
 	
